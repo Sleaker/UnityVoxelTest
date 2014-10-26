@@ -1,0 +1,11 @@
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\UnityEditor.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\UnityEngine.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\nunit.framework.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\obj\Debug\Assembly-CSharp.dll
+C:\Users\sleaker\workspace\UnityVoxelTest\obj\Debug\Assembly-CSharp.pdb

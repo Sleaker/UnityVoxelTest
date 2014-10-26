@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D46EC92-12B7-6583-9AC7-8503AF9AAE06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Code\Behaviors\Datatable.cs" />
+    <Compile Include="Assets\Code\Behaviors\ModBehavior.cs" />
+    <Compile Include="Assets\Code\Behaviors\Observer.cs" />
+    <Compile Include="Assets\Code\Behaviors\VoxelRenderer.cs" />
+    <Compile Include="Assets\Code\BlockGame.cs" />
+    <Compile Include="Assets\Code\Blocks\Block.cs" />
+    <Compile Include="Assets\Code\Blocks\BlockRegistry.cs" />
+    <Compile Include="Assets\Code\Blocks\SimpleBlock.cs" />
+    <Compile Include="Assets\Code\Exceptions\BlockNotFoundException.cs" />
+    <Compile Include="Assets\Code\Game.cs" />
+    <Compile Include="Assets\Code\GameManager.cs" />
+    <Compile Include="Assets\Code\Graphics\BlockMesher.cs" />
+    <Compile Include="Assets\Code\Graphics\IMesher.cs" />
+    <Compile Include="Assets\Code\Graphics\MCMesher.cs" />
+    <Compile Include="Assets\Code\Graphics\TextureHelper.cs" />
+    <Compile Include="Assets\Code\MathUtil\Util.cs" />
+    <Compile Include="Assets\Code\MathUtil\Vector3i.cs" />
+    <Compile Include="Assets\Code\MathUtil\VoxelUtil.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Billow.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Checkerboard.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Constant.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Cylinders.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Perlin.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\RidgedMultifractal.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Simplex.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Spheres.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\SysRandom.cs" />
+    <Compile Include="Assets\Code\Noise\Generators\Voronoi.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Absolute.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Add.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Bias.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Blend.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Clamp.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Curve.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Displace.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Exponent.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Invert.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Multiply.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Power.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Rotate.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Scale.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\ScaleBias.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Select.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Terrace.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Translate.cs" />
+    <Compile Include="Assets\Code\Noise\Modifiers\Turbulence.cs" />
+    <Compile Include="Assets\Code\Noise\NoiseModule.cs" />
+    <Compile Include="Assets\Code\Noise\Util\GeneratorBase.cs" />
+    <Compile Include="Assets\Code\Noise\Util\NoiseMath.cs" />
+    <Compile Include="Assets\Code\Player\MouseLook.cs" />
+    <Compile Include="Assets\Code\Player\PlayerController.cs" />
+    <Compile Include="Assets\Code\Terrain\Chunk.cs" />
+    <Compile Include="Assets\Code\Terrain\Generator\FlatGenerator.cs" />
+    <Compile Include="Assets\Code\Terrain\Generator\GroundGenerator.cs" />
+    <Compile Include="Assets\Code\Terrain\Generator\WorldGenerator.cs" />
+    <Compile Include="Assets\Code\Terrain\World.cs" />
+    <Compile Include="Assets\Code\ThreadDispatcher\Dispatcher.cs" />
+    <Compile Include="Assets\Code\ThreadDispatcher\Task.cs" />
+    <Compile Include="Assets\Code\ThreadDispatcher\TaskDistributer.cs" />
+    <Compile Include="Assets\Code\ThreadDispatcher\Threads.cs" />
+    <Compile Include="Assets\Code\ThreadDispatcher\UnityThreadHelper.cs" />
+    <Compile Include="Assets\Code\Volumes\GenericTable.cs" />
+    <Compile Include="Assets\Code\Volumes\IVoxelDataSource.cs" />
+    <Compile Include="Assets\Code\Volumes\InMemoryDataSource.cs" />
+    <Compile Include="Assets\Code\Volumes\PagedDataSource.cs" />
+    <Compile Include="Assets\Code\Volumes\TransvoxelTable.cs" />
+    <Compile Include="Assets\EditorCode\CreateWorldWizard.cs" />
+    <Compile Include="Assets\EditorCode\SceneManager.cs" />
+    <Compile Include="Assets\EditorCode\VoxelMenuEntries.cs" />
+    <None Include="Assets\Resources\ChunkDiffuse.shader" />
+    <None Include="Assets\Resources\CubicVoxelShader.shader" />
+    <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>

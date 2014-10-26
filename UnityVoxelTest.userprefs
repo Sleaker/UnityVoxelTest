@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\sleaker\workspace\UnityVoxelTest\Assets\Code\Volumes\IVoxelDataSource.cs">
+    <Files>
+      <File FileName="Assets\Code\BlockGame.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\ThreadDispatcher\Threads.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\ThreadDispatcher\Dispatcher.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\sleaker\workspace\UnityVoxelTest\Assets\Code\Volumes\PagedDataSource.cs" Line="38" Column="64" />
+      <File FileName="c:\Users\sleaker\workspace\UnityVoxelTest\Assets\Code\Volumes\IVoxelDataSource.cs" Line="42" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
