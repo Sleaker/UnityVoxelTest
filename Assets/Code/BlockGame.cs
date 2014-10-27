@@ -17,7 +17,7 @@ namespace Voxel
         public void Start()
         {
             Screen.lockCursor = true;
-            GameObject o = Game.CreateWorld("Ground World", new GroundGenerator(), new BlockMesher());
+            GameObject o = Game.CreateWorld("Ground World", new GroundGenerator(), new MCMesher());
             World w = o.GetComponent<World>();
             GameObject player = new GameObject("Player");
             //player.AddComponent<Equipment>();

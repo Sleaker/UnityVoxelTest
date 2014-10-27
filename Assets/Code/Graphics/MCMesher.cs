@@ -19,7 +19,8 @@ namespace Voxel.Graphics
             VoxelData[, ,] data = source.SampleSpace(volume);
             int index;
 
-            IEnumerable<int> distinctElements = data.Cast<int>().Where(i => i > 0).Distinct();
+
+            IEnumerable<VoxelData> distinctElements = data.Cast<VoxelData>().Where(v => v.Data > 0).Distinct();
 
             int numTypes = distinctElements.Count();
             Dictionary<int, int> indices = new Dictionary<int, int>();
@@ -27,7 +28,7 @@ namespace Voxel.Graphics
             
             for (int i = 0; i < numTypes; i++)
             {
-                int blockID = distinctElements.First();
+                int blockID = distinctElements.First().Material;
 
                 SimpleMesh submesh = new SimpleMesh {RenderMaterial = Game.BlockRegistry[blockID].Data.RenderMaterial};
                 mesh.Submeshes.Add(submesh);

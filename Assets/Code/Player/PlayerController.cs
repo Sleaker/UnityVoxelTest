@@ -155,15 +155,15 @@ namespace Voxel.Player
                 Game.TakeScreenshot();
             }
 
-            // Switch Mesher
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                CurrentMesher++;
-                if (CurrentMesher == Meshers.Length) CurrentMesher = 0;
-                GameObject g = GameObject.FindWithTag("World");
-                World w = g.GetComponent<World>();
-                w.Mesher = Meshers[CurrentMesher];
-            }
+            //// Switch Mesher
+            //if (Input.GetKeyDown(KeyCode.O))
+            //{
+            //    CurrentMesher++;
+            //    if (CurrentMesher == Meshers.Length) CurrentMesher = 0;
+            //    GameObject g = GameObject.FindWithTag("World");
+            //    World w = g.GetComponent<World>();
+            //    w.Mesher = Meshers[CurrentMesher];
+            //}
 
             // Shoot a sphere
             if (Input.GetKeyDown(KeyCode.F))

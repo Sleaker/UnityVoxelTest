@@ -46,6 +46,7 @@ namespace Voxel
            string filename = string.Format("Screenshots/Screenshot-{0}.png", DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
            Application.CaptureScreenshot(filename);
         }
+
         public static GameObject GetWorld(string name)
         {
             GameObject go = null;

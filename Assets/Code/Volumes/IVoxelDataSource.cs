@@ -25,7 +25,7 @@ namespace Voxel.Volumes
             return d.Material;
         }
 
-        public static explicit operator uint(VoxelData d)
+        public static implicit operator uint(VoxelData d)
         {
             return d.Data;
         }
@@ -38,6 +38,11 @@ namespace Voxel.Volumes
         public static explicit operator VoxelData(int i)
         {
             return new VoxelData() { Data = (uint)i };
+        }
+
+        public static implicit operator int(VoxelData v)
+        {
+            return (int) v.Data;
         }
     }
 

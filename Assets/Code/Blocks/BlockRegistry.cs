@@ -252,7 +252,7 @@ namespace Voxel.Blocks
             }
 
             //Set up the material
-            AtlasMaterial = (Material)Resources.Load("BlockMaterial");
+            AtlasMaterial = (Material)Resources.Load("MCMaterial");
             AtlasMaterial.SetTexture("_Atlas32", TextureAtlases[AtlasSize._32].Atlas);
             AtlasMaterial.SetFloat("_PERCENT", TextureAtlases[AtlasSize._32].CopyPercent);
             AtlasMaterial.SetFloat("_PALLETESIZE", TextureAtlases[AtlasSize._32].PalleteSize);

@@ -21,7 +21,7 @@ namespace Voxel.Terrain
 
         IVoxelDataSource<VoxelData> dataSource;
 
-        private IMesher mesher = new BlockMesher();
+        private IMesher mesher = new MCMesher();
         public IMesher Mesher {
             get { return mesher; }
             set
@@ -95,9 +95,6 @@ namespace Voxel.Terrain
                             c.Mesher = mesher;
                             UnityThreadHelper.TaskDistributor.Dispatch(() =>
                             {
-                                // Check null
-                                String val = dataSource == null ? "Null datasource." : "Datasource not null";
-                                Debug.Log(val);
                                 WorldGenerator.GenerateChunk(b, Seed, dataSource);
 
                                 UnityThreadHelper.Dispatcher.Dispatch(() =>
